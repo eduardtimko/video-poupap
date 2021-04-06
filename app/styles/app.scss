@@ -1,0 +1,12 @@
+@import 'helpers/variables';
+@import 'helpers/fonts';
+@import 'helpers/video';
+@import 'helpers/optimize';
+@import '../blocks/**/*';
+
+html,
+body {
+	position: relative;
+	font-family: $default-font;
+	font-size: calc(24px + 26 * ((100vw - 320px) / (1360 - 320)));
+}

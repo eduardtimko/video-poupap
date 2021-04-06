@@ -1,0 +1,54 @@
+.poupap {
+	display: none;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: $black;
+		opacity: 0.5;
+		z-index: 1;
+	}
+
+	&.active {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__content {
+		position: relative;
+		width: 80%;
+		height: 80%;
+		z-index: 2;
+
+		& > * {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.close {
+	position: absolute;
+	top: -0.4rem;
+	right: 0;
+	width: 0.24rem;
+	height: 0.24rem;
+	z-index: 9;
+	background-image: url(../images/icons/close.svg);
+	background-size: cover;
+	background-color: transparent;
+	border: none;
+
+	&:focus {
+		outline: auto;
+	}
+}
