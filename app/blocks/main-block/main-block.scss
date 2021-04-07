@@ -55,5 +55,10 @@
 		&:focus {
 			outline: auto;
 		}
+
+		@media (max-width: 768px) {
+			width: 1rem;
+			height: 0.71rem;
+		}
 	}
 }
